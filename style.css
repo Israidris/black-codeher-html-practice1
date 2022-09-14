@@ -2,6 +2,7 @@
 
 body {
     font-family:"Urbanist", sans-serif;
+    background-color: white;
 }
 
 #img { 
@@ -63,3 +64,55 @@ body {
      grid-template-rows: 1fr;
 /*  gap: 0px; */ 
 }
+
+@keyframes rainbow {
+    0% { 
+        background-color: red;
+    }
+
+    25% {
+        background-color: Orange; 
+    }
+
+    50% {
+        background-color: yellow; 
+    }
+
+    75% {
+        background-color: green;
+    }
+
+    80% {
+        background-color:Blue;
+    }
+
+    100% {background-color: purple;
+    }
+
+}
+
+html {
+    background-color: pink;
+    animation-name: rainbow; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes move {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+    100% {
+        top: 50%;
+        left: 100%;
+    }
+
+.practice {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    animation-name: move; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+} */
